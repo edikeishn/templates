@@ -1,0 +1,2 @@
+npm i vue@next vue-loader@next
+npm i @vue/compiler-sfc css-loader file-loader mini-css-extract-plugin url-loader webpack webpack-cli webpack-dev-server
