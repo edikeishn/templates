@@ -6,3 +6,4 @@ systemctl restart ПРОГРАММА - Перезапустить сервис
 systemctl start ПРОГРАММА - Запустить сервис
 systemctl enable ПРОГРАММА - Включить автозапуск службы
 systemctl disable ПРОГРАММА - Отключить автозапуск службы
+systemctl reboot - Перезапустить сервер
