@@ -1,5 +1,8 @@
-sudo service nginx status
-sudo service nginx start
-sudo service nginx stop
-sudo service nginx reload
+Команды:
+systemctl status nginx
+systemctl start nginx
+systemctl stop nginx
+systemctl restart nginx
 sudo nginx -t(T) - Команда для проверки конфигурации
+
+Файлы:
