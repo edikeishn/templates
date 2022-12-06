@@ -1,0 +1,10 @@
+ssh имя_пользователя@хост - подключение по ssh
+systemctl status sshd - проверка службы SSH
+
+
+//Файлы
+/etc/(open)ssh/sshd_config - файл конфигурации ssh подключений
+~/.ssh/id_rsa - файл хранения Privat ключей
+~/.ssh/id_rsa.pub - файл хранения Public ключей
+~/.ssh/authorized_keys - файл хранения Public ключей на сервере
+
