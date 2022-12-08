@@ -1,4 +1,6 @@
 https://itproffi.ru/generatsiya-i-ispolzovanie-ssl-sertifikatov-v-linux/
+https://ssl-config.mozilla.org/  - настройка сервера
+
 
 openssl genrsa -des3 -out НАЗВАНИЕ.key 2048 - Генерация закрытого ключа
 openssl req -new -key НАЗВАНИЕ.key -out НАЗВАНИЕ2.csr - Запрос на подпись
