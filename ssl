@@ -1,2 +1,5 @@
 https://itproffi.ru/generatsiya-i-ispolzovanie-ssl-sertifikatov-v-linux/
 
+openssl genrsa -des3 -out НАЗВАНИЕ.key 2048 - Генерация закрытого ключа
+openssl req -new -key НАЗВАНИЕ.key -out НАЗВАНИЕ2.csr - Запрос на подпись
+openssl x509 -signkey НАЗВАНИЕ.key -in НАЗВАНИЕ2.csr -req -days 365 -out НАЗВАНИЕ3.crt - подписать сертификат собственным ключом
