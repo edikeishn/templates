@@ -1,0 +1,26 @@
+https://docs.gradle.org/current/userguide/userguide.html - мануал
+https://javarush.com/groups/posts/2126-kratkoe-znakomstvo-s-gradle - Краткое знакомство с Gradle
+
+gradle init - инициализация нового проекта
+
+/* Основные комманды */
+gradle tasks - просмотр доступных задач проекта (зависит от подключенных plugins  и собственных task)
+
+/* Основные поля файла build.gradle */
+
+Блок подключаемых плагинов:
+plugins {   
+    id 'java'
+    id 'application'
+}
+
+Блок подключаемых репозиториев для подключения завсисмостей
+repositories {
+     mavenCentral()
+}
+
+Блок подключаемых зависемостей
+dependencies {
+    implementation 'com.google.guava:guava:26.0-jre'
+    testImplementation 'junit:junit:4.12'
+}
