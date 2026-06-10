@@ -1,0 +1,48 @@
+@RestController
+@RequestMapping("/")
+class RestApiController {
+
+//Метод возвращает из БД все Entity
+@GetMapping
+Iterable<T> getT() {
+ return repository.findAll();
+}
+
+//Метод возвращает из БД Entity c указанныи id
+@GetMapping("/{id}")
+ Optional<T> getTById(@PathVariable String id) {
+ return repository.findById(id);
+ }
+
+//Метод сохранят в БД переданную Т т
+@PostMapping
+ T postCoffee(@RequestBody T t) {
+ return repository.save(t);
+ }
+
+//Метод заменяет в БД указанной id переданную Т т
+@PutMapping("/{id}")
+ ResponseEntity<T> putT(@PathVariable String id,
+ @RequestBody T t) {
+ return (!repository.existsById(id))
+ ? new ResponseEntity<>(repository.save(t),
+ HttpStatus.CREATED)
+ : new ResponseEntity<>(repository.save(t),
+ HttpStatus.OK);
+ }
+
+//Метод удаляет из БД Entity с кказанной id
+@DeleteMapping("/{id}")
+ void deleteT(@PathVariable String id) {
+ repository.deleteById(id);
+ }
+
+}
+
+
+
+
+
+
+
+
