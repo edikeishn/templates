@@ -1,0 +1,1 @@
+const [state, methodSetState] = setState(arg) - метод присваевает state значение arg и объявляет метод мутатор methodSetState для state
